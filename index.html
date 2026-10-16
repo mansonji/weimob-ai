@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>2026 微盟 AI 大赛 · 报名简章</title>
+<style>
+:root{
+  --brand:#1F4E79; --brand2:#2E75B6; --soft:#EAF2FA; --soft2:#F5F8FB;
+  --orange:#C05000; --orange-bg:#FFF3E6; --orange-line:#F0B27A;
+  --ink:#1A1A1A; --ink2:#4A5568; --ink3:#7A8699; --line:#E2E8F0;
+  --ok:#0E9F6E;
+  --font:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+body{background:#F5F7FA;color:var(--ink);font-family:var(--font);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased;}
+.page{max-width:680px;margin:0 auto;background:#fff;min-height:100vh;padding-bottom:40px;box-shadow:0 0 40px rgba(31,78,121,.08);}
+
+/* 头部 */
+header{background:linear-gradient(135deg,#1F4E79 0%,#2E75B6 100%);color:#fff;padding:30px 22px 26px;}
+header .kicker{font-size:12px;letter-spacing:3px;opacity:.8;}
+header h1{margin:8px 0 0;font-size:26px;font-weight:700;letter-spacing:.5px;line-height:1.3;}
+header h1 em{font-style:normal;color:#FFD9A8;}
+header .sub{margin-top:10px;font-size:14px;opacity:.92;}
+header .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;}
+header .tags span{font-size:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:4px 10px;border-radius:20px;}
+
+/* 板块标题 */
+.sec{margin:0;padding:0;}
+.sec-h{display:flex;align-items:center;gap:10px;padding:20px 22px 12px;border-bottom:2px solid var(--line);}
+.sec-h .num{flex:none;width:26px;height:26px;border-radius:7px;background:var(--brand);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.sec-h h2{margin:0;font-size:18px;font-weight:700;color:var(--brand);letter-spacing:.3px;}
+.sec-h .sub{font-size:12px;color:var(--ink3);font-weight:400;}
+.sec-h.hi .num{background:var(--orange);}
+.sec-h.hi h2{color:var(--orange);}
+
+/* 板块分割线：团队赛 / 个人赛 */
+.split{display:flex;align-items:center;gap:14px;padding:18px 22px;background:#EFF4F9;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.split .ln{flex:1;height:1px;background:linear-gradient(90deg,rgba(199,221,242,0),#A8C7E4);}
+.split .ln.r{background:linear-gradient(90deg,#A8C7E4,rgba(199,221,242,0));}
+.split .lb{flex:none;font-size:12px;font-weight:700;letter-spacing:3px;color:var(--brand);background:#fff;border:1px solid #C7DDF2;border-radius:20px;padding:5px 14px;}
+
+.block{padding:16px 22px 4px;}
+h3{font-size:15px;color:var(--brand2);margin:20px 0 8px;font-weight:700;display:flex;align-items:center;gap:8px;}
+h3 .dot{width:6px;height:6px;border-radius:50%;background:var(--brand2);flex:none;}
+h3:first-child{margin-top:4px;}
+p{margin:8px 0;}
+.lead{color:var(--ink2);}
+
+/* 赛道卡 */
+.lane{border:1px solid var(--line);border-radius:10px;padding:14px 15px;margin:10px 0;background:#fff;}
+.lane .t{font-size:15.5px;font-weight:700;color:var(--brand);display:flex;align-items:center;gap:8px;}
+.lane .t .ic{font-size:16px;}
+.lane .d{font-size:13.5px;color:var(--ink2);margin-top:4px;}
+.lane .test{font-size:13px;color:var(--ink2);background:var(--soft2);border-radius:6px;padding:8px 10px;margin-top:8px;}
+.lane .test b{color:var(--brand);}
+.lane.v{border-left:4px solid #2E75B6;}
+.lane.i{border-left:4px solid #C05000;}
+.lane.e{border-left:4px solid #0E9F6E;}
+
+/* 决策条 */
+.decide{background:var(--orange-bg);border:1px solid var(--orange-line);border-radius:10px;padding:13px 15px;margin:14px 0;font-size:13.5px;color:#7a3d05;}
+.decide b{color:var(--orange);}
+.decide ol{margin:8px 0 0;padding-left:20px;}
+.decide li{margin:4px 0;}
+
+/* 列表 */
+ul.clean{list-style:none;margin:8px 0;padding:0;}
+ul.clean li{position:relative;padding-left:20px;margin:7px 0;font-size:14px;}
+ul.clean li::before{content:"";position:absolute;left:4px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--brand2);}
+ul.clean li b{color:var(--brand);}
+ul.clean.o li::before{background:var(--orange);}
+
+/* 交付卡 */
+.deliver{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+.deliver .it{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;gap:11px;background:#fff;}
+.deliver .it .n{flex:none;width:22px;height:22px;border-radius:6px;background:var(--soft);color:var(--brand);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px;}
+.deliver .it .c{font-size:14px;}
+.deliver .it .c > b{display:block;color:var(--ink);font-size:14.5px;}
+.deliver .it .c span{color:var(--ink3);font-size:13px;}
+.deliver .it .c span b{color:var(--ink);font-weight:700;}
+.deliver .it.key{border-color:var(--orange-line);background:var(--orange-bg);}
+.deliver .it.key .n{background:var(--orange);color:#fff;}
+
+/* 文档必含 */
+.must{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:10px 0;}
+.must .mh{background:var(--soft);padding:10px 14px;font-size:13.5px;font-weight:700;color:var(--brand);}
+.must .mb{padding:6px 14px 12px;}
+.must .mb ol{margin:8px 0;padding-left:22px;}
+.must .mb li{margin:6px 0;font-size:14px;}
+.must .mb li b{color:var(--brand);}
+.must .mb li span{color:var(--ink3);font-size:13px;}
+.must .nose{font-size:12.5px;color:var(--ink3);border-top:1px dashed var(--line);padding:8px 14px 10px;background:var(--soft2);}
+
+/* 时间线 */
+.tl{margin:10px 0 4px;border-left:2px solid var(--soft);padding-left:0;}
+.tl .row{position:relative;padding:0 0 16px 22px;}
+.tl .row::before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--brand2);}
+.tl .row.now::before{background:var(--orange);border-color:var(--orange);}
+.tl .row .dt{font-size:14px;font-weight:700;color:var(--brand);}
+.tl .row .tx{font-size:13.5px;color:var(--ink2);}
+.tl .row .tx b{color:var(--ink);}
+
+/* 表格 */
+.tw{overflow-x:auto;margin:10px 0;}
+table{border-collapse:collapse;width:100%;font-size:13.5px;}
+th{background:var(--brand);color:#fff;text-align:left;padding:9px 11px;font-weight:600;font-size:13px;}
+td{border:1px solid var(--line);padding:8px 11px;vertical-align:top;line-height:1.6;}
+tbody tr:nth-child(even){background:var(--soft2);}
+td.c,th.c{text-align:center;}
+
+/* 链接按钮 */
+.link{display:flex;align-items:center;gap:10px;background:var(--soft);border:1px solid #C7DDF2;border-radius:10px;padding:13px 15px;margin:10px 0;text-decoration:none;color:var(--brand);font-weight:600;font-size:14px;word-break:break-all;}
+.link .u{font-size:12.5px;color:var(--ink2);font-weight:400;}
+
+/* 奖励条 */
+.prize{background:linear-gradient(135deg,#1F4E79,#2E75B6);border-radius:12px;padding:16px 18px;color:#fff;margin:12px 0;}
+.prize .big{font-size:22px;font-weight:700;letter-spacing:.5px;}
+.prize .small{font-size:13px;opacity:.9;margin-top:4px;}
+.prize .tier{font-size:17px;font-weight:700;letter-spacing:.2px;}
+.prize .tier + .tier{margin-top:7px;}
+.prize.o{background:linear-gradient(135deg,#B34700,#E0791F);}
+
+.note{background:var(--soft2);border-left:3px solid var(--brand2);border-radius:0 8px 8px 0;padding:10px 13px;margin:10px 0;font-size:13px;color:var(--ink2);}
+.note.w{background:var(--orange-bg);border-left-color:var(--orange);color:#7a3d05;}
+.note b{color:var(--ink);}
+.note.w b{color:var(--orange);}
+
+/* 页脚 */
+footer{margin-top:22px;padding:22px;background:#0E2338;color:#B9C9D8;font-size:12.5px;line-height:1.9;}
+footer b{color:#fff;}
+footer .q{margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div class="kicker">2026 WEIMOB AI CHALLENGE</div>
+  <h1>2026 微盟 AI 大赛<br><em>让 AI，长出价值</em></h1>
+  <div class="sub">从「工具配备」走向「价值创造」</div>
+  <div class="tags">
+    <span>团队赛 · 三大赛道</span>
+    <span>个人赛 · SkillHub 上传</span>
+    <span>10.19 开始报名</span>
+  </div>
+</header>
+
+<!-- ============ 板块分割线 · 团队赛 ============ -->
+<div class="split">
+  <span class="ln"></span>
+  <span class="lb">团队赛</span>
+  <span class="ln r"></span>
+</div>
+
+<!-- ============ 板块一 ============ -->
+<section class="sec">
+  <div class="sec-h">
+    <span class="num">1</span>
+    <div><h2>团队赛 · 三大赛道</h2><div class="sub">以「项目组」为单位，1—10 人，个人也可单独成组</div></div>
+  </div>
+
+  <div class="block">
+
+    <h3><span class="dot"></span>第一步：你要报哪个赛道</h3>
+    <p class="lead">先看清楚每条赛道要什么，再对号入座。同一个项目组可以重复报名、报名多个赛道。</p>
+
+    <div class="lane v">
+      <div class="t"><span class="ic">¥</span>业务价值赛道</div>
+      <div class="d">用 AI 做出<b>可量化</b>的业务成果——营收增长、成本下降、转化率或留存率提升。</div>
+      <div class="test">自测：这个项目<b>赚了多少钱 / 省了多少钱</b>？能不能落到一张真实的经营或财务报表上？</div>
+    </div>
+
+    <div class="lane i">
+      <div class="t"><span class="ic">★</span>业务创新赛道</div>
+      <div class="d">用 AI 做出公司<b>现在还没有</b>的新场景、新模式、新方法，需要有能跑起来的 Demo 原型。</div>
+      <div class="test">自测：这是个<b>以前没人做过</b>的新玩法吗？我能当场演示出来吗？</div>
+    </div>
+
+    <div class="lane e">
+      <div class="t"><span class="ic">⚡</span>提效赛道</div>
+      <div class="d">用 AI 改写工作流——让重复性作业的耗时或人力投入显著下降，且已在实际工作中落地使用。</div>
+      <div class="test">自测：这件事<b>以前要多久、现在要多久</b>？团队是不是每天都在用？</div>
+    </div>
+
+    <div class="decide">
+      <b>三个都沾边怎么办？按这个顺序判：</b>
+      <ol>
+        <li>能拿出<b>经营 / 财务系统数据</b>证明指标变化 → 报<b>业务价值</b></li>
+        <li>拿不出财务数据，但能算清<b>耗时 / 人力差</b> → 报<b>提效</b></li>
+        <li>只有 Demo、还没有真实数据 → 报<b>业务创新</b></li>
+      </ol>
+      <div style="margin-top:8px">一个项目<b>只能报一个赛道</b>；同一个项目组可以提交不同赛道。</div>
+    </div>
+
+    <h3><span class="dot"></span>第二步：最终要交什么</h3>
+    <div class="deliver">
+      <div class="it key">
+        <div class="n">1</div>
+        <div class="c"><b>项目说明文档</b><span>必交。格式为 <b>HTML 或 PPT</b>（二选一），内容要求见第三步。</span></div>
+      </div>
+      <div class="it key">
+        <div class="n">2</div>
+        <div class="c"><b>Skill 打包文件</b><span>项目涉及 Skill / Agent 的必交。把做出来的源文件打包一并提交。</span></div>
+      </div>
+      <div class="it key">
+        <div class="n">3</div>
+        <div class="c"><b>演示材料</b><span>选交。Demo 录屏 / 可运行链接 / 关键截图，作为评审与述职的辅助。</span></div>
+      </div>
+    </div>
+    <div class="note">交付截止 <b>11 月 20 日 23:59</b>，请将交付物<b>邮件发送至 chao.ji@weimob.com</b>，逾期不再受理。</div>
+
+    <h3><span class="dot"></span>第三步：项目说明文档必须包含这些</h3>
+
+    <div class="must">
+      <div class="mh">A · 通用部分（三条赛道都要写）</div>
+      <div class="mb">
+        <ol>
+          <li><b>项目基本信息</b> <span>项目名称、所属赛道、项目组名称、项目负责人、成员</span></li>
+          <li><b>业务场景说明</b> <span>锚定微盟哪个业务域 / 场景</span></li>
+          <li><b>AI 方案说明</b> <span>如何使用 AI 实现业务价值提升 / 业务创新 / 提效；如何复用</span></li>
+          <li><b>附录</b> <span>Skill 打包文件说明（包内不得包含密钥、业务数据等敏感信息）、参考资料、数据来源</span></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="must">
+      <div class="mh" style="background:#EAF2FA;color:#1F4E79;">B · 赛道专属部分（只写你报的那条赛道）</div>
+      <div class="mb">
+
+        <p style="margin:12px 0 2px;font-weight:700;color:#2E75B6;">▸ 业务价值赛道</p>
+        <ol>
+          <li><b>业务目标与基线</b> <span>改造前该项指标是多少——注明数据来源、统计口径、时间区间</span></li>
+          <li><b>成果数据</b> <span>改造后指标的变化，须标明取自哪个经营 / 财务 / 业务系统</span></li>
+          <li><b>ROI 测算</b> <span>投入（人力/时间/成本）与产出（增收/降本）对比，给出量化结论</span></li>
+        </ol>
+
+        <p style="margin:14px 0 2px;font-weight:700;color:#C05000;">▸ 业务创新赛道</p>
+        <ol>
+          <li><b>创新点说明</b> <span>这个场景 / 模式新在哪；此前业务中是否已有类似做法</span></li>
+          <li><b>Demo 演示</b> <span>可运行原型 / 录屏 / 演示链接，含操作路径</span></li>
+          <li><b>价值想象空间</b> <span>跑通后能带来什么，下一步推广计划，市场空间有多大</span></li>
+        </ol>
+
+        <p style="margin:14px 0 2px;font-weight:700;color:#0E9F6E;">▸ 提效赛道</p>
+        <ol>
+          <li><b>提效前后对比</b> <span>同一件事改造前的人力 / 耗时 vs 改造后，须给具体数字</span></li>
+          <li><b>提效幅度计算</b> <span>写清计算公式与基数来源（例：单次 40 分钟 → 8 分钟，提效 80%）</span></li>
+          <li><b>使用频次与范围</b> <span>多少人、多高频在使用，已嵌入哪个日常流程</span></li>
+        </ol>
+
+      </div>
+      <div class="nose">评审按此清单逐项核对，缺项会影响评分。文档内所有数据须真实可追溯，不得虚假填报。</div>
+    </div>
+
+    <h3><span class="dot"></span>第四步：关键节点</h3>
+    <div class="tl">
+      <div class="row now">
+        <div class="dt">10.19 — 10.23 · 报名</div>
+        <div class="tx">以项目组为单位填写<b>企微智能表单</b>（扫描海报二维码），提交报名与选题意向。</div>
+      </div>
+      <div class="row">
+        <div class="dt">11.20 · 项目交付截止</div>
+        <div class="tx">提交<b>项目说明文档</b>（HTML / PPT）与 <b>Skill 打包文件</b>至 <b>chao.ji@weimob.com</b>，截止 23:59。</div>
+      </div>
+      <div class="row">
+        <div class="dt">11.30 — 12.11 · 述职评审</div>
+        <div class="tx">通过初筛的项目参加<b>述职</b>（线上/线下），携带项目说明文档与 Demo 演示，由三赛道专家组独立评分。</div>
+      </div>
+      <div class="row">
+        <div class="dt">12 月下旬 · 颁奖</div>
+        <div class="tx">现场颁授奖金与荣誉，获奖项目路演。</div>
+      </div>
+    </div>
+
+    <h3><span class="dot"></span>奖金与荣誉</h3>
+    <div class="prize">
+      <div class="big">1 万元现金 × 9 个项目奖</div>
+      <div class="small">每条赛道各评选 3 个项目，一万元等额现金奖励</div>
+    </div>
+    <ul class="clean">
+      <li>获奖项目的<b>全体组员</b>获得腾讯颁发的「<b>AI 先锋奖</b>」荣誉证书</li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ============ 板块分割线 · 团队赛 / 个人赛 ============ -->
+<div class="split">
+  <span class="ln"></span>
+  <span class="lb">个人赛</span>
+  <span class="ln r"></span>
+</div>
+
+<!-- ============ 板块二 ============ -->
+<section class="sec">
+  <div class="sec-h hi">
+    <span class="num">2</span>
+    <div><h2>个人赛 · 上传 Weimob-SkillHub</h2><div class="sub">个人参赛，和团队赛不冲突，奖励可兼得</div></div>
+  </div>
+
+  <div class="block">
+
+    <h3><span class="dot"></span>在哪里上传</h3>
+    <a class="link" href="https://i.weimob.com/skillhub-f/" target="_blank" rel="noopener">
+      <span>🔗</span>
+      <span>Weimob-SkillHub<br><span class="u">https://i.weimob.com/skillhub-f/</span></span>
+    </a>
+    <ul class="clean">
+      <li>用<b> LDAP 账号</b>登录（与内部系统同一账号）</li>
+      <li>把自己沉淀的 Skill / Agent <b>上传并提交审核</b>，通过安全扫描与上架审核后即计入</li>
+      <li>上传的资产须为<b>本人原创、实操完成</b></li>
+    </ul>
+
+    <h3><span class="dot"></span>奖励一 · AI 超级个体奖 × 10</h3>
+    <div class="prize o">
+      <div class="tier">Top 1—3 每人 3,000 元</div>
+      <div class="tier">Top 4—10 每人 2,000 元 · 共 10 个名额</div>
+    </div>
+    <ul class="clean o">
+      <li><b>获奖条件</b>：赛期内你的 Skill 进入 SkillHub <b>热榜 Top 10</b>（个人榜）</li>
+      <li>热榜只看「<b>被使用</b>」——安装到 WorkBuddy 次数、收藏、下载、点赞，<b>不看上传数量</b></li>
+      <li>额外获得「<b>AI 超级个体</b>」认证证书 + AI 专属认证徽章，并纳入公司 AI 人才池</li>
+    </ul>
+
+    <h3><span class="dot"></span>奖励二 · 上传激励（萌币）</h3>
+    <div class="tw"><table>
+      <thead><tr><th>档位</th><th>条件</th><th class="c">奖励</th></tr></thead>
+      <tbody>
+        <tr><td><b>前 100 名</b></td><td>统计窗口内上传 Skill 并通过审核上架</td><td class="c">5,000 萌币<br><span style="color:#7A8699;font-size:12px">价值 100 元</span></td></tr>
+        <tr><td><b>第 101 名起</b></td><td>截至窗口结束</td><td class="c">2,500 萌币<br><span style="color:#7A8699;font-size:12px">价值 50 元</span></td></tr>
+      </tbody>
+    </table></div>
+    <div class="note"><b>统计窗口：10.19 — 11.20。</b>同一人只计一次（以本人首个上架资产计），重复上传不重复计奖；萌币发放至个人账户，不可提现、不可转让。</div>
+
+    <h3><span class="dot"></span>两点说明</h3>
+    <div class="note w">
+      <b>① 两条线可兼得。</b>个人赛与团队赛独立，奖励互不冲突——你既可以组队打团队赛，也可以个人上传 Skill 冲热榜、领萌币。<br>
+      <b>② 不用怕"不会做"。</b>Skill 的本质是「把你的工作方法固化成可复用的流程」，运营、HR、财务岗同样适用。
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div><b>微盟 AI-First 战略项目组</b> ｜ 腾讯 WorkBuddy 团队</div>
+  <div class="q">如有疑问，请联系 HRBP <b>孙婷婷 / 计超</b></div>
+</footer>
+
+</div>
+</body>
+</html>
